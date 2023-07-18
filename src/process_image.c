@@ -147,4 +147,3 @@ void scale_image(image im, int c, float v)
       *(im.data+i+c*im.h*im.w)*=v;
     }
 }
-
