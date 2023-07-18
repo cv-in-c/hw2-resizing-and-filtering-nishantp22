@@ -171,7 +171,7 @@ image colorize_sobel(image im){
     memcpy(new.data,img[1].data,im.w*im.h*sizeof(float));
     memcpy(new.data+im.w*im.h,img[0].data,im.w*im.h*sizeof(float));
     memcpy(new.data+2*im.h*im.w,img[0].data,im.w*im.h*sizeof(float));
-    free_image(img[0]);
+    free_image(img[0]);                  //
     free_image(img[1]);
     hsv_to_rgb(new);
     return new;

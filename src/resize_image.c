@@ -57,5 +57,5 @@ image bilinear_resize(image im, int w, int h)
         }
       }
     }
-    return img;
+    return img; //
 }
